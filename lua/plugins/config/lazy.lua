@@ -83,14 +83,14 @@ local M = {
 			-- open lazygit log
 			["<localleader>l"] = function(plugin)
 			require("lazy.util").float_term({ "lazygit", "log" }, {
-			cwd = plugin.dir,
+				cwd = plugin.dir,
 			})
 			end,
 
 			-- open a terminal for the plugin dir
 			["<localleader>t"] = function(plugin)
 			require("lazy.util").float_term(nil, {
-			cwd = plugin.dir,
+				cwd = plugin.dir,
 			})
 			end,
 		},
