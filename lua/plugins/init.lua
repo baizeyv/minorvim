@@ -16,6 +16,16 @@ local plugins = {
 			{ "hrsh7th/cmp-cmdline" }
 		}
 	},
+
+	{
+		"neovim/nvim-lspconfig",
+		init = function()
+			require("core.helper").lazy_load("nvim-lspconfig")
+		end,
+		config = function()
+			require("plugins.config.lspconfig")
+		end
+	}
 }
 
 local config = require("core.helper").load_config()
