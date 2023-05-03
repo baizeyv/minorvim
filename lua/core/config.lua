@@ -10,6 +10,6 @@ M.keymaps = {}
 
 M.plugins = require("plugins.config.lazy")
 
-M.lazy_disable_home = false
+M.lazy_disable_home = true
 
 return M

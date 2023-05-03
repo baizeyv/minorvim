@@ -8,4 +8,7 @@ if #config.plugins > 0 then
 end
 
 require("lazy").setup(plugins, config.lazy)
-require("plugins.helper").load_lazy_home_key()
+
+if config.lazy_disable_home then
+	require("plugins.helper").load_lazy_home_key()
+end
