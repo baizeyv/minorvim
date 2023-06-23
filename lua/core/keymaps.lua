@@ -17,6 +17,8 @@ M.common = {
     [""] = {
         ["u"] = { "k", "move up", opts = opt_ns },
         ["e"] = { "j", "move down", opts = opt_ns },
+		["gu"] = { "gk", "up", opts = opts_ns },
+		["ge"] = { "gj", "down", opts = opts_ns },
         ["n"] = { "h", "move left", opts = opt_ns },
         ["i"] = { "l", "move right", opts = opt_ns },
         ["U"] = { "5k", "move up 5x", opts = opt_ns },
